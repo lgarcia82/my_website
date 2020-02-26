@@ -1,0 +1,59 @@
+/* grid width: 114rem;
+   gutter-vertical: 8rem
+   gutter-horizontal:  6rem
+   */
+
+/*    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  } */
+  
+  .row {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .row:not(:last-child) {
+    margin-bottom: 80px;
+  }
+  
+  /*make use of this!!! */
+  [class^="col-"] {
+    float: left;
+  }
+  
+  [class^="col-"]:not(:last-child) {
+    margin-right: 15px;
+  }
+  
+  /* clearfix */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .col-1-of-2{
+    width: calc((100% - 15px) / 2);
+  }
+  
+  .col-1-of-3 {
+    width: calc((100% - 2 * 15px) / 3);
+  }
+  
+  .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4);
+  }
+  
+  .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 15px) / 3));
+  }
+  
+  .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem);
+  }
+  
+  .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
+  }

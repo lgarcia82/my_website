@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal website to tell people more about myself and what I aspire to do
+    professionally"
+    />
+    <link type="text/css" rel="stylesheet" href="resources/css/style.css" />
+    <link type="text/css" rel="stylesheet" href="resources/css/grid-row.css" />
+    <link type="text/css" rel="stylesheet" href="resources/css/queries.css" />
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Jura:600|Pacifico|Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="favicon" href="./resources/images/elg.jpg" />
+
+    <title>Lee Garcia: Developer</title>
+  </head>
+
+  <body class="Container">
+    <div class="Main show-on-scroll">
+      <header class="Nav-Container">
+        <nav class="Nav">
+          <div class="Logo-Container">
+            <a id="logo" href="index.html">el_g</a>
+          </div>
+          <div class="Nav-LinksContainer">
+            <ul class="Nav-List">
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+              <div class="Button-Container Resume">
+                <a
+                  class="Button Resume"
+                  id="resume"
+                  href="/resources/images/Garcia_Resume_v2.pdf"
+                  >Resume / CV
+                </a>
+              </div>
+            </ul>
+          </div>
+          <a class="mobile-nav-icon"><i class="ion-navicon-round"></i></a>
+        </nav>
+      </header>
+
+      <div class="Sidebar-Container Left" orientation="left">
+        <ul class="Sidebar-Social-links">
+          <li class="Sidebar-ListItem">
+            <a
+              class="Sidebar-Link"
+              href="https://www.linkedin.com/in/lee-garcia-314a15180/"
+              target="_blank"
+            >
+              <svg>
+                <use href="#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="Sidebar-ListItem">
+            <a
+              class="Sidebar-Link"
+              href="https://github.com/lgarcia82"
+              target="_blank"
+            >
+              <svg>
+                <use href="#github"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="Sidebar-ListItem">
+            <a
+              class="Sidebar-Link"
+              href="https://www.instagram.com/el_g1982/"
+              target="_target"
+            >
+              <svg>
+                <use href="#insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="Sidebar-ListItem Last">
+            <a
+              class="Sidebar-Link"
+              href="https://codepen.io/el_g1982"
+              target="_blank"
+            >
+              <svg>
+                <use href="#codepen"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="Sidebar-Container Right" orientation="right">
+        <div class="Sidebar-email">
+          <a href="mailto:garcialx482@gmail.com" class="Email-Link"
+            >garcialx482@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <section class="Section-Container About" id="about">
+        <div class="FormBody About">
+          <div class="Title-Container">
+            <h3 id="section-heading">About Me</h3>
+          </div>
+          <div class="FlexContainer">
+            <div class="About-Text">
+              <p>
+                Hello! I'm Lee, a Computer Science major with a focus on Systems
+                Programming. I attended
+                <a id="school-link" href="https://tamucc.edu/" target="_blank"
+                  >Texas A &amp; M University-CC
+                </a>
+                and recently graduated in December 2019, receiving my Bachelor's
+                Degree.
+              </p>
+              <br />
+              <p>
+                I have kept busy since graduating, and continue working everyday
+                to learn and improve my skills. Along with being on the job
+                hunt, I am also staying busy with a few personal projects that I
+                have taken on, strictly in the interest of honing my craft.
+              </p>
+              <br />
+              <p>
+                Here are some of the technologies, I have been using in my
+                projects and practice a lot more as of recent:
+              </p>
+
+              <div class="Skills-Container">
+                <ul class="Skills-list">
+                  <li>HTML5 &amp; CSS3</li>
+                  <li>JavaScript (ES6)</li>
+                  <li>Java / JavaEE</li>
+                  <li>Node.js</li>
+                  <li>ReactJS</li>
+                  <li>Express</li>
+                  <li>ASP.Net</li>
+                  <li>C | C++ | C#</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="About-Pic-Container">
+              <a
+                class="Pic-link"
+                href="https://github.com/lgarcia82"
+                target="_blank"
+              >
+                <div class="Image-Wrapper">
+                  <div style="width:100%; padding-bottom: 100%; "></div>
+                  <img
+                    id="image-my_pic"
+                    src="resources/images/profile_pic.jpg"
+                    alt="profile image"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="Section-Container js--section-projects" id="projects">
+        <div class="FormBody Projects">
+          <div class="row">
+            <div class="Title-Container">
+              <h3 id="section-heading">Things I've Worked On</h3>
+            </div>
+            <div class="Projects-Body">
+              <!-- JReports Project -->
+              <div class="Project">
+                <!-- create a grid layout for each one-->
+
+                <div class="Feature-image Left">
+                  <!-- <div class="FilterBox Jreports"></div> -->
+                  <img
+                    id="image-jreports"
+                    src="resources/images/j-reports-queryresults.png"
+                    alt="jreports project screenshot"
+                  />
+                </div>
+                <div class="Info Right">
+                  <h5 id="project-heading">Senior Class Project</h5>
+                  <h4 id="project-title">J-Reports</h4>
+                  <div class="Description-container">
+                    <p id="project-description">
+                      A web solution for the redundant tasks of report
+                      generating done by database managers and admins. Developed
+                      for the IT Director of the City of Aransas Pass
+                    </p>
+                  </div>
+                  <ul class="Project-techs Right">
+                    <li>ReactJS</li>
+                    <li>Redux</li>
+                    <li>Java EE</li>
+                    <li>MySql</li>
+                  </ul>
+                  <div class="Links Right">
+                    <a
+                      class="Project-link Right"
+                      href="https://github.com/hleebarton97/project-j-reports"
+                      target="_blank"
+                    >
+                      <svg>
+                        <use href="#github"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- NQueens Project -->
+              <div class="Project BeerBudz">
+                <!-- create a grid layout for each one-->
+                <div class="Feature-image Right">
+                  <!--<div class="FilterBox BeerBudz"></div>-->
+                  <img
+                    id="image-beerbudz"
+                    src="resources/images/collage2.png"
+                    alt="project screenshot"
+                  />
+                </div>
+                <div class="Info Left">
+                  <h5 id="project-heading">Mobile Programming</h5>
+                  <h4 id="project-title">Beer Budz</h4>
+                  <div class="Description-container">
+                    <p id="project-description">
+                      Android application that allowed users to catalog their
+                      personal experiences with the beers they’ve tried allowing
+                      them to rate, review, and share with other users
+                    </p>
+                  </div>
+                  <ul class="Project-techs Left">
+                    <li>Android</li>
+                    <li>Firebase</li>
+                    <li>BreweryDB API</li>
+                  </ul>
+                  <div class="Links Left">
+                    <a
+                      class="Project-link Left"
+                      href="https://github.com/hleebarton97/project-j-reports"
+                      target="_blank"
+                    >
+                      <svg>
+                        <use href="#github"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="Container More-Header">
+                <h2 class="Header More">More Projects</h2>
+              </div>
+              <div class="Projects-Other">
+                <div class="row">
+                  <div class="col-1-of-3">
+                    <div class="Card">
+                      <div class="Card-Header">
+                        <svg>
+                          <use href="#folder"></use>
+                        </svg>
+
+                        <a
+                          class="Card-Git"
+                          href="https://github.com/hleebarton97/project-j-reports"
+                          target="_blank"
+                        >
+                          <svg>
+                            <use href="#github"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="Card-Body">
+                        <h5 id="project-card-title">N-Queens Solver</h5>
+                        <div class="Card-Description">
+                          <p>
+                            A purely procedural program written in C++ that
+                            solves the N-Queens puzzle problem using all 5
+                            phases of meta-heuristics. Solves up to 9 queens in
+                            under 30 seconds.
+                          </p>
+                        </div>
+                        <footer class="Card-Footer">
+                          <ul class="Project-techs">
+                            <li>C++</li>
+                            <li>Genetic Algorithms</li>
+                          </ul>
+                        </footer>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-1-of-3">
+                    <div class="Card">
+                      <div class="Card-Header">
+                        <svg>
+                          <use href="#folder"></use>
+                        </svg>
+                        <a
+                          class="Card-Git"
+                          href="https://github.com/hleebarton97/project-j-reports"
+                          target="_blank"
+                        >
+                          <svg>
+                            <use href="#github"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="Card-Body">
+                        <h5 id="project-card-title">Black Jack</h5>
+                        <div class="Card-Description">
+                          <p>
+                            Nothing special here, just exactly as the name
+                            implies. A blackjack game web application done for
+                            javascript practice. Implemented using a module
+                            pattern design pattern.
+                          </p>
+                        </div>
+                        <footer class="Card-Footer">
+                          <ul class="Project-techs">
+                            <li>JavaScript</li>
+                            <li>HTML5 & CSS3</li>
+                          </ul>
+                        </footer>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-1-of-3">
+                    <div class="Card">
+                      <div class="Card-Header">
+                        <svg>
+                          <use href="#folder"></use>
+                        </svg>
+                        <a
+                          class="Card-Git"
+                          href="https://github.com/hleebarton97/project-j-reports"
+                          target="_blank"
+                        >
+                          <svg>
+                            <use href="#github"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="Card-Body">
+                        <h5 id="project-card-title">Sky Blue User-Sign-up</h5>
+                        <div class="Card-Description">
+                          <p>
+                            My very first web application. The common user sign
+                            up form performing input validation checks, password
+                            strength requirements, and unique user checks.
+                          </p>
+                        </div>
+                        <footer class="Card-Footer">
+                          <ul class="Project-techs">
+                            <li>ASP.Net</li>
+                            <li>C#</li>
+                            <li>MS SQL</li>
+                          </ul>
+                        </footer>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="Section-Container Contact" id="contact">
+        <div class="FormBody Contact">
+          <div class="Contact-Body">
+            <div class="Title-Container Middle">
+              <h3 id="section-heading">Reach Out</h3>
+            </div>
+            <div class="Contact-TextBody">
+              <p>
+                I look forward to getting to know other developers, aspiring
+                like myself or otherwise, so feel free to reach out. Whether it
+                be about a job opportunity or even something in the freelance
+              </p>
+              <div class="Contact-Card">
+                <ul>
+                  <a href="mailto:garcialx482@gmail.com" target="_blank">
+                    <li>Email:<span>garcialx482@gmail.com</span></li></a
+                  >
+                  <a
+                    href="https://www.linkedin.com/in/lee-garcia-314a15180/"
+                    target="_blank"
+                  >
+                    <li>Instagram: <span>@el_g1982</span></li></a
+                  >
+                  <a
+                    href="https://www.linkedin.com/in/lee-garcia-314a15180/"
+                    target="_blank"
+                  >
+                    <li>Linkedin: <span>linkedin.com/leegarcia</span></li></a
+                  >
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="Footer">
+        <div class="Footer-Container">
+          Built by Lee Garcia
+        </div>
+      </footer>
+
+      <!----------------  javascript references  -------------------->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="resources/js/jquery.waypoints.min.js"></script>
+      <script src="resources/js/script.js"></script>
+
+      <!---------------- SVG DECLARATIONS. 
+                  Acquired from https://www.iconfinder.com/ ------------>
+
+      <div class="Metadata">
+        <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg">
+          <symbol id="folder">
+            <g>
+              <title>background</title>
+              <rect
+                fill="none"
+                id="canvas_background"
+                height="38"
+                width="38"
+                y="-1"
+                x="-1"
+              />
+            </g>
+            <g>
+              <title>Layer 1</title>
+              <rect id="svg_1" width="50" height="50" fill="none" />
+              <path
+                stroke="#0ce0e8"
+                id="svg_2"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                fill="none"
+                d="m33.859682,6.990228c0,0 -19.750097,0 -20.715886,0c-1.049367,0 -1.774423,-2.990228 -2.857364,-2.990228l-7.85775,0c-0.788632,0 -1.428682,0.669811 -1.428682,1.495114l0,2.990228l0,22.426714l0,2.990228c0,0.825303 0.640049,1.495114 1.428682,1.495114l31.431,0c0.788632,0 1.428682,-0.669811 1.428682,-1.495114l0,-25.416942c0,-0.825303 -0.640049,-1.495114 -1.428682,-1.495114z"
+              />
+              <path
+                stroke="#0ce0e8"
+                id="svg_3"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                fill="none"
+                d="m1.71747,33.855818l0,-15.924169c0,-1.598207 0.611776,-2.895303 1.365571,-2.895303l30.042566,0c0.753795,0 1.365571,1.297096 1.365571,2.895303l0,15.924169"
+              />
+            </g>
+          </symbol>
+        </svg>
+
+        <svg width="26" height="26" xmlns="http://www.w3.org/2000/svg">
+          <symbol id="linkedin">
+            <g>
+              <title>background</title>
+              <rect
+                fill="none"
+                id="canvas_background"
+                height="28"
+                width="28"
+                y="-1"
+                x="-1"
+              />
+            </g>
+            <g>
+              <title>Layer 1</title>
+              <path
+                stroke="null"
+                id="svg_1"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                fill="#"
+                d="m19.512681,18.252929l0,-4.351865c0,-2.331621 -1.27176,-3.416615 -2.967188,-3.416615c-1.368186,0 -1.981289,0.73683 -2.322956,1.253688l0,-1.075333l-2.577687,0c0.034167,0.712306 0,7.590125 0,7.590125l2.577687,0l0,-4.238906c0,-0.226288 0.016704,-0.452948 0.085037,-0.614954c0.186019,-0.453319 0.610065,-0.922616 1.321872,-0.922616c0.93313,0 1.305927,0.695957 1.305927,1.715925l0,4.060923l2.577308,0l0,-0.000372zm-10.583324,-8.626071c0.898584,0 1.458538,-0.58337 1.458538,-1.312025c-0.016704,-0.744261 -0.559954,-1.31091 -1.441455,-1.31091s-1.458159,0.566277 -1.458159,1.31091c0,0.728655 0.559575,1.312025 1.424751,1.312025l0.016324,0zm1.288844,8.626071l0,-7.590125l-2.577308,0l0,7.590125l2.577308,0zm-8.486248,-16.400124l22.777798,0l0,22.294389l-22.777798,0l0,-22.294389z"
+              />
+            </g>
+          </symbol>
+        </svg>
+
+        <svg
+          enable-background="new 0 0 24 24"
+          height="24px"
+          id="Layer_1"
+          version="1.1"
+          viewBox="0 0 24 24"
+          width="24px"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <symbol id="github">
+            <circle cx="12" cy="12" fill="" r="11" />
+            <path
+              d="M14.3127,18.9411c0,-0.2826,0.01,-1.2066,0.01,-2.3545c0,-0.8004,-0.2742,-1.3226,-0.5819,-1.5889c1.9105,-0.2124,3.9176,-0.938,3.9176,-4.2333c0,-0.9367,-0.3329,-1.7021,-0.883,-2.3029c0.0891,-0.2161,0.3829,-1.0888,-0.0841,-2.2706c0,0,-0.7195,-0.2306,-2.3571,0.8795c-0.6857,-0.1902,-1.4202,-0.2854,-2.1494,-0.2887c-0.7292,0.0032,-1.4632,0.0985,-2.1475,0.2887c-1.6396,-1.1101,-2.3601,-0.8795,-2.3601,-0.8795c-0.4658,1.1818,-0.1722,2.0544,-0.0831,2.2706c-0.5489,0.6008,-0.8841,1.3663,-0.8841,2.3029c0,3.2875,2.0034,4.0232,3.909,4.2402c-0.2453,0.2143,-0.4677,0.5927,-0.5447,1.1473c-0.4896,0.2192,-1.7315,0.5984,-2.4967,-0.7133c0,0,-0.4537,-0.8236,-1.3152,-0.8842c0,0,-0.8371,-0.0109,-0.0587,0.5216c0,0,0.5623,0.2636,0.9526,1.2554c0,0,0.5037,1.5313,2.8907,1.0123c0.0036,0.7169,0.0116,1.3928,0.0116,1.5974c0,0.0718,-0.016,0.1475,-0.0512,0.2149c0.7377,0.2252,1.5197,0.3474,2.3302,0.3474c0.7172,0,1.4119,-0.0961,2.0735,-0.2739C14.3421,19.1475,14.3127,19.0406,14.3127,18.9411z"
+              fill="#0f0f0f"
+            />
+            <path
+              d="M4.2218,19.7782C6.2124,21.7688,8.9624,23,12,23c6.0751,0,11,-4.9249,11,-11c0,-3.0376,-1.2312,-5.7876,-3.2218,-7.7782L4.2218,19.7782z"
+              fill=""
+              opacity="0.1"
+            />
+          </symbol>
+        </svg>
+
+        <svg
+          viewBox="0 0 24 24"
+          height="100%"
+          width="100%"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <symbol id="codepen">
+            <path
+              d="M22.89,6.48,14.11.63a3.86,3.86,0,0,0-4.22,0L1.11,6.48A2.5,2.5,0,0,0,0,8.56v6.86a2.5,2.5,0,0,0,1.11,2.08l8.78,5.85a3.8,3.8,0,0,0,4.22,0l8.78-5.85A2.5,2.5,0,0,0,24,15.43V8.56A2.5,2.5,0,0,0,22.89,6.48ZM13,3.49a.5.5,0,0,1,.77-.42l7,4.5a.5.5,0,0,1,0,.84l-4,2.5a.5.5,0,0,1-.54,0l-3-2A.5.5,0,0,1,13,8.49ZM3.23,7.57l7-4.5a.5.5,0,0,1,.77.42v5a.5.5,0,0,1-.22.42l-3,2a.5.5,0,0,1-.54,0l-4-2.5a.5.5,0,0,1,0-.84ZM2.5,14a.5.5,0,0,1-.5-.5v-3a.5.5,0,0,1,.76-.43l2.5,1.5a.5.5,0,0,1,0,.86l-2.5,1.5A.5.5,0,0,1,2.5,14ZM11,20.5a.5.5,0,0,1-.5.5.5.5,0,0,1-.27-.08l-7-4.5a.5.5,0,0,1,0-.84l4-2.5a.5.5,0,0,1,.54,0l3,2a.5.5,0,0,1,.22.42Zm1-6.6a.5.5,0,0,1-.28-.08l-2.1-1.4a.5.5,0,0,1,0-.83l2.1-1.4a.5.5,0,0,1,.55,0l2.1,1.4a.5.5,0,0,1,0,.83l-2.1,1.4A.5.5,0,0,1,12,13.89Zm8.77,2.52-7,4.5a.5.5,0,0,1-.27.08.5.5,0,0,1-.5-.5v-5a.5.5,0,0,1,.22-.42l3-2a.5.5,0,0,1,.54,0l4,2.5a.5.5,0,0,1,0,.84ZM22,13.49a.5.5,0,0,1-.76.43l-2.5-1.5a.5.5,0,0,1,0-.86l2.5-1.5a.5.5,0,0,1,.76.43Z"
+              sytle="none"
+            />
+          </symbol>
+        </svg>
+
+        <svg width="26" height="26" xmlns="http://www.w3.org/2000/svg">
+          <symbol id="insta">
+            <g>
+              <title>background</title>
+              <rect
+                fill="none"
+                id="canvas_background"
+                height="28"
+                width="28"
+                y="-1"
+                x="-1"
+              />
+            </g>
+            <g>
+              <title>Layer 1</title>
+              <path
+                stroke="null"
+                id="svg_2"
+                d="m13.000001,7.220164c-3.409426,0 -6.23438,2.573833 -6.23438,5.779836s2.776247,5.779836 6.23438,5.779836s6.23438,-2.618988 6.23438,-5.779836s-2.824953,-5.779836 -6.23438,-5.779836zm0,9.482543c-2.191774,0 -3.9939,-1.670734 -3.9939,-3.702707s1.802125,-3.702707 3.9939,-3.702707s3.9939,1.670734 3.9939,3.702707s-1.802125,3.702707 -3.9939,3.702707z"
+              />
+              <circle stroke="null" id="svg_3" r="1.334351" cy="7" cx="20" />
+              <path
+                stroke="null"
+                id="svg_4"
+                d="m23.125571,2.965267c-1.265696,-1.308878 -3.066879,-1.987556 -5.111466,-1.987556l-10.028209,0c-4.235215,0 -7.058691,2.811664 -7.058691,7.029161l0,9.937779c0,2.08451 0.681529,3.878158 2.044586,5.187036c1.314377,1.260401 3.066879,1.890602 5.062785,1.890602l9.930848,0c2.093267,0 3.845769,-0.678678 5.111466,-1.890602c1.314377,-1.260401 1.995906,-3.054049 1.995906,-5.138559l0,-9.986256c0,-2.036033 -0.681529,-3.781204 -1.947225,-5.041605zm-0.194723,15.02786c0,1.502786 -0.535487,2.71471 -1.411738,3.538819s-2.093267,1.260401 -3.553686,1.260401l-9.930848,0c-1.460419,0 -2.677434,-0.436293 -3.553686,-1.260401c-0.876251,-0.872585 -1.314377,-2.08451 -1.314377,-3.587296l0,-9.937779c0,-1.454309 0.438126,-2.666233 1.314377,-3.538819c0.827571,-0.824108 2.093267,-1.260401 3.553686,-1.260401l10.028209,0c1.460419,0 2.677434,0.436293 3.553686,1.308878c0.827571,0.872585 1.314377,2.08451 1.314377,3.490342l0,9.986256l0,0z"
+              />
+            </g>
+          </symbol>
+        </svg>
+      </div>
+
+      <!-- ---------------------- END OF SVG DECLARATIONS --------------------->
+    </div>
+  </body>
+</html>
