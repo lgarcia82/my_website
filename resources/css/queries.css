@@ -20,14 +20,16 @@
     margin: 0 5%;
   }
 
+  .Skills-list li{ padding: 0 0 10px 5px; }
 }
 
 /* Small phones to small tablets:from 481 to 767 pixels */
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 787px){
   body{
    /*  background-image: linear-gradient(rgba(5, 73, 25, 0.8), rgba(4, 54, 10, 0.795)); */
     max-width: 767px;
     font-size: 18px;
+    background-attachment: fixed;
 
   }
 
@@ -68,6 +70,38 @@
     display: block;
   }
 
+  .Feature-image img{
+    height: 300px;
+    filter: grayscale(0%) brightness(30%) contrast(1)
+  }
+
+  .Feature-image.Left{
+    grid-column-start: 1;
+    grid-column-end: 13;
+  }
+  
+  .Feature-image.Right{
+    grid-column-start: 1;
+    grid-column-end: 13;
+  }
+
+  .Info.Left{
+    padding-left: 4%;
+    grid-column: 1 / 12;
+  }
+  
+  .Info.Right{
+    padding-right: 3%;
+    grid-column: 2 / 13;
+  }
+
+  .Description-container{
+    padding: 20px 0 0 0;
+    background-color: unset;
+    box-shadow: unset;
+  }
+
+  
 }
 
 /* Small phones: from 0 to 480 pixels */
@@ -85,4 +119,6 @@
   .About-Pic-Container{
     width: 60%;
   }
+
+
 }

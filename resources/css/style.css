@@ -341,7 +341,7 @@ span{ display: block; }
 
 .Title-Container { 
   display: flex; 
-  width: 50%; 
+  width: 100%; 
   margin: 45px 0; 
   white-space: nowrap;
 }
@@ -387,10 +387,11 @@ span{ display: block; }
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background-color: rgba(12, 225, 232, 0.507);
+  background-color: rgba(12, 225, 232, 0.2);
 }
 
-.Pic-link:hover::before{
+.Pic-link:hover::before,
+.Pic-link:active::before{
   background-color: unset;
 }
 
@@ -485,6 +486,7 @@ span{ display: block; }
   overflow: hidden;
   font-family: 'Jura', sans-serif;
   font-size: 75%;
+  width: 100%;
 }
 
 .Skills-list li{ padding: 5px 10px; }
@@ -494,9 +496,6 @@ span{ display: block; }
   color: rgb(12, 224, 232);
   overflow: hidden;
 }
-
-
-
 
 /*-----PROJECTS SECTION COMPONENTS-------*/
 
@@ -548,6 +547,8 @@ span{ display: block; }
   grid-column: 7 / span 6;
 }
 
+
+
 #project-heading{
   color: rgb(12, 224, 232);
   font-family: 'Jura', sans-serif;
@@ -571,7 +572,7 @@ span{ display: block; }
 }
 
 .Project-techs{
-  margin: 40px 0 0 0;
+  margin: 20px 0 0 0;
 }
 
 .Project-techs li{
