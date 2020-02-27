@@ -30,12 +30,11 @@
 }
 
 /* Small phones to small tablets:from 481 to 767 pixels */
-@media only screen and (max-width: 787px){
+@media only screen and (max-width: 830px){
   body{
     max-width: 767px;
     font-size: 18px;
     background-attachment: fixed;
-
   }
 
   .Sidebar-Container{
