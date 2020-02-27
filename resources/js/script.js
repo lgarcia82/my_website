@@ -23,6 +23,8 @@ $(document).ready(function () {
   })
 })
 
+/** Components fade in on scroll within viewe */
+
 var scroll =
   window.requestAnimationFrame ||
   function (callback) {
@@ -103,6 +105,5 @@ function hasScrolled () {
         .addClass('Nav-Container2')
     }
   }
-  console.log(st)
   lastScrollTop = st
 }
