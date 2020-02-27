@@ -123,26 +123,7 @@
 
   #section-heading:after{ width: 100%; }
 
-  .Image-Wrapper{
-    filter: grayscale(0%) contrast(1) brightness(90%);
-    border-width: 2px;
-    border-style: solid;
-    border-color: #0ce0e8;
-    box-shadow: 20px 20px 30px 10px rgba(12, 224, 232, 0.55);
-  }
 
-  .Pic-link:before{
-    background-color: unset;
-  }
-
-  .Pic-link:after{
-    border: none;
-  }
-
-  .Pic-link:hover::after{
-    box-shadow: none;
-  }
-  
 }
 
 /* Small phones: from 0 to 480 pixels */

@@ -805,9 +805,9 @@ span{ display: block; }
 
 .Footer{
   width: 100%;
-  height: 130px;
+  height: 120px;
   padding-top: 40px;
-  background-color:#19262B;
+  background-color:rgb(20, 20, 20);
   text-align: center;
   position: absolute;
   bottom: 0;
@@ -815,10 +815,15 @@ span{ display: block; }
 
 .Footer-Container{
   line-height: 1;
-  font-family: 'Jura', sans-serif;
-  font-size: 60%;
+  font-family: 'Raleway', ;
+  font-weight: 500;
+  
+  font-size: 65%;
 }
 
+.Footer-Container p{
+  line-height: 1.8;
+}
 
 
 
