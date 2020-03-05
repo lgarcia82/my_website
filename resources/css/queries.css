@@ -2,27 +2,17 @@
 
 /* Big tablet to 1200px: widths smaller than 1140 pixels */
 @media (max-width: 1140px){
-  body{
-    font-size: 18px;
-  }
+  body{ font-size: 18px; }
 
-  #section-heading:after{
-   
-    width: 300px;
-  
-  }
+  #section-heading:after{ width: 300px; }
 }
 
 /* small tablets to big tablets: from 768 to 1023 pixels */
 @media only screen and (max-width: 1023px){
   
-  body{
-    font-size: 18px;
-  }
+  body{ font-size: 18px; }
 
-  .FormBody{
-    margin: 0 5%;
-  }
+  .FormBody{ margin: 0 5%; }
 
   .Skills-list li{ padding: 0 0 10px 5px; }
 
@@ -37,13 +27,9 @@
     background-attachment: fixed;
   }
 
-  .Sidebar-Container{
-    display: none;
-  }
+  .Sidebar-Container{ display: none; }
 
-  .FormBody{
-    padding: 0 5px;
-  }
+  .FormBody{ padding: 0 5px; }
 
   #logo{
     border-radius: 50%;
@@ -52,12 +38,9 @@
     font-size: 15px;
   }
 
-  .FlexContainer{
-    display: block;
-  }
-  .About-Text{
-    width: 100%;
-  }
+  .FlexContainer{ display: block; }
+
+  .About-Text{ width: 100%; }
 
   .About-Pic-Container{
     margin: 0 auto;
@@ -65,20 +48,14 @@
     width: 50%;
   }
 
-  .Nav-LinksContainer{
-    
-    display: none;
-  }
+  .Nav-LinksContainer{ display: none; }
 
-  .mobile-nav-icon{
-    display: block;
-  }
+  .mobile-nav-icon{ display: block; }
 
   .Feature-image img{
     height: 300px;
     filter: grayscale(70%) brightness(20%) contrast(1);
     border: none;
-    
   }
 
   .Feature-image.Left{
@@ -88,10 +65,7 @@
     box-shadow: -30px 30px 30px 10px rgba(12, 224, 232, 0.55);
   }
   
-  .Feature-image.Left img{
-    box-shadow: none;
-    
-  }
+  .Feature-image.Left img{ box-shadow: none; }
 
   .Feature-image.Right{
     grid-column-start: 1;
@@ -100,9 +74,7 @@
     box-shadow: 30px 30px 30px 10px rgba(12, 224, 232, 0.55);
   }
 
-  .Feature-image.Right img{
-    box-shadow: none;
-  }
+  .Feature-image.Right img{ box-shadow: none; }
 
   .Info.Left{
     padding-left: 4%;
@@ -122,31 +94,21 @@
 
   #section-heading:after{ width: 100%; }
 
-
+  .Title-Container.Middle
+  #section-heading:after { margin: 20px auto; width: 100%; }
 }
 
 /* Small phones: from 0 to 480 pixels */
 @media only screen and (max-width: 480px) {
 
-  body{
-    
-    font-size: 15px;
-    max-width: 1480px;
-  }
-  .Sidebar-Container{
-    display: none;
-  }
+  body{ font-size: 15px; max-width: 1480px; }
 
-  .About-Pic-Container{
-    width: 60%;
-  }
+  .Sidebar-Container{ display: none; }
 
-  .Contact-Card {
-    padding: 20px 10px;
-  }
+  .About-Pic-Container{ width: 60%; }
 
-  .Projects-Other {
-    padding: 0;
-  }
+  .Contact-Card { padding: 20px 10px; }
+
+  .Projects-Other { padding: 0; }
 
 }

@@ -32,7 +32,6 @@ body{
 .Main{
   position: relative;
   min-height: 100vh;
-
   opacity: 0;
   transition: opacity 0.5s 0.5s ease-in-out;
 }
@@ -41,22 +40,14 @@ body{
   opacity: 1;
 }
 
-h1, h2, h3, h4, h5{
-  color: #f2ede3;
-}
+h1, h2, h3, h4, h5{ color: #f2ede3; }
 
 a {color: #a1a1a1;}
 a:hover { color: #0ce0e8; }
 
-svg{
-  fill: #a1a1a1;
-}
+svg{ fill: #a1a1a1; }
 
-svg:hover{
-  fill: #0ce0e8;
-}
-
-
+svg:hover{ fill: #0ce0e8; }
 
 .Nav-Container2{
   display: inline-block;
@@ -73,9 +64,7 @@ svg:hover{
 /*------------ Navigation Styling -----------*/
 
 /* SVG DATA REMOVAL*/
-.Metadata{
-  display: none;
-}
+.Metadata{ display: none; }
 
 .Nav-Container{
   display: inline-block;
@@ -93,11 +82,7 @@ svg:hover{
   display: none;
 }
 
-.mobile-nav-icon svg{
-  width: 30px;
-  height: 40px; 
-}
-
+.mobile-nav-icon svg{ width: 30px; height: 40px; }
 
 .Logo-Container{display: inline-flex; padding: 15px 30px; }
 
@@ -116,7 +101,6 @@ svg:hover{
 }
 
 #logo:hover{background-color: rgba(12, 224, 232, 0.2);}
-
 
 /*----------------------------------
 /*         INDEX.html CODE
@@ -144,9 +128,7 @@ svg:hover{
 /* Typography */
 span{ display: block; }
 
-.Greeting{
-  font-size: 70%;
-}
+.Greeting{ font-size: 70%; }
 
 .Heading-greeting{ font-size: 100%; color: #0ce0e8; font-family: 'Jura', sans-serif;  }
 
@@ -171,9 +153,7 @@ span{ display: block; }
 
 .Button:hover {background-color: rgba(12, 224, 232, 0.2);}
 
-.Button.Profile{ 
-  padding: 20px 20px;
-}
+.Button.Profile{ padding: 20px 20px; }
 
 /*----------------------------------
 /*         PROFILE.html CODE
@@ -226,7 +206,8 @@ span{ display: block; }
 }
 
 .Nav-List li a:hover,
-.Nav-List li a:active { border-bottom: 2px solid #0ce0e8; color: #0ce0e8;}
+.Nav-List li a:active 
+{ border-bottom: 2px solid #0ce0e8; color: #0ce0e8;}
 
 .Button.Resume{ padding: 12px 9px; font-size: 65%; }
 
@@ -238,15 +219,9 @@ span{ display: block; }
   bottom: 0px;
   z-index: 10;
 }
-.Sidebar-Container.Left{
-  left: 50px;
-  right: auto;
-}
+.Sidebar-Container.Left{ left: 50px; right: auto; }
 
-.Sidebar-Container.Right{
-  left: auto;
-  right: 60px;
-}
+.Sidebar-Container.Right{ left: auto; right: 60px; }
 
 .Sidebar-Social-links{
   display: flex;
@@ -295,20 +270,15 @@ span{ display: block; }
   display: inline-block;
   position: relative;
 }
-.Sidebar-Link svg{
-  width: 25px;
-  height: 25px;
-}
-
-
+.Sidebar-Link svg{ width: 25px; height: 25px; }
 
 .Sidebar-ListItem.Last:after{
   content: "";
-    display: block;
-    width: 1px;
-    height: 90px;
-    background-color: #a1a1a1;
-    margin: 10px 0 0 21px;
+  display: block;
+  width: 1px;
+  height: 90px;
+  background-color: #a1a1a1;
+  margin: 10px 0 0 21px;
 }
 
 /*-----ABOUT SECTION STYLING-------*/
@@ -317,23 +287,13 @@ span{ display: block; }
   padding: 35px 0 150px 0;
 }
 
-.Section-Container.About{
-  counter-reset: section;
-}
+.Section-Container.About{ counter-reset: section; }
 
-.Section-Container.Contact{
-  text-align: center;
-}
+.Section-Container.Contact{ text-align: center; }
 
-.FormBody{
-  margin: 0 auto;
-  
-  max-width: 1000px;
-}
+.FormBody{ margin: 0 auto; max-width: 1000px; }
 
-.FormBody.About{
-  max-width: 900px;
-}
+.FormBody.About{ max-width: 900px; }
 
 .FlexContainer{
   display: flex;
@@ -355,7 +315,6 @@ span{ display: block; }
 
 .Title-Container.Middle{
   display: block;
-  text-align: center;
   white-space: normal;
   margin: 0 auto;
 }
@@ -376,7 +335,7 @@ span{ display: block; }
   width: 40%;
   position: relative;
   margin-left: 60px;
-  max-width: 300px;
+  max-width: 250px;
 }
 
 .Pic-link{
@@ -439,9 +398,7 @@ span{ display: block; }
   z-index: 99;
 }
 
-.Image-Wrapper:hover{
-  filter: grayscale(0%) brightness(100%);
-}
+.Image-Wrapper:hover{ filter: grayscale(0%) brightness(100%); }
 
 #image-my_pic{
   position: absolute;
@@ -455,35 +412,40 @@ span{ display: block; }
 }
 
 #section-heading{
-  position: relative;
+  
   display: flex;
-  white-space: nowrap;
   align-items: center;
-  -webkit-box-align: center;
   width: 100%;
-    font-size: 150%;
-    color: aliceblue;
-    font-weight: 500;
+  font-size: 150%;
+  color: aliceblue;
+  font-weight: 500;
 }
+
+.Title-Container.Middle
+#section-heading { display: block; white-space: normal; }
 
 #section-heading:before{
   counter-increment: section 1;
   content: "0" counter(section) ".";
   font-family: 'Jura', sans-serif;
   color: #0ce0e8;
-  margin-right: 5%;
+  margin-right: 4%;
 }
 
 #section-heading:after{
   content: "";
-    display: block;
-    height: 1px;
-    width: 300px;
-    background-color: #a1a1a1;
-    position: relative;
-    top: -5px;
-    margin-left: 20px;
+  display: block;
+  height: 1px;
+  width: 300px;
+  background-color: #a1a1a1;
+  position: relative;
+  top: -5px;
+  margin-left: 20px;
 }
+
+.Title-Container.Middle
+#section-heading:after 
+{ margin: 20px auto; width: 350px; }
 
 #school-link:link,
 #school-link:visited { text-decoration: none; color: #0ce0e8;}
@@ -502,6 +464,7 @@ span{ display: block; }
 }
 
 .Skills-list li{ padding: 5px 10px; }
+
 .Skills-list li:before{
   content: "\2662";
   padding-right: 15px;
@@ -559,8 +522,6 @@ span{ display: block; }
   grid-column: 7 / span 6;
 }
 
-
-
 #project-heading{
   color: rgb(12, 224, 232);
   font-family: 'Jura', sans-serif;
@@ -583,9 +544,7 @@ span{ display: block; }
   line-height: 1.5;
 }
 
-.Project-techs{
-  margin: 20px 0 0 0;
-}
+.Project-techs{ margin: 20px 0 0 0; }
 
 .Project-techs li{
   font-family: 'Jura', sans-serif;
@@ -594,14 +553,9 @@ span{ display: block; }
   font-size: 65%;
 }
 
-.Project-techs.Right li{
-  margin-left: 12px;
-}
+.Project-techs.Right li{ margin-left: 12px; }
 
-.Project-techs.Left li{
-  margin-right: 12px;
-}
-
+.Project-techs.Left li{ margin-right: 12px; }
 
 .Description-container{
   display: block;
@@ -620,19 +574,12 @@ span{ display: block; }
   height: 98%; 
 }
 
-.FilterBox.Jreports{
-  max-width: 645px;
-}
+.FilterBox.Jreports{ max-width: 645px; }
 
-.FilterBox.BeerBudz{
-  max-width: 622px;
-}
+.FilterBox.BeerBudz{ max-width: 622px; }
 
 .FilterBox:hover,
-.FilterBox:active{
-  background-color: unset;
-}
-
+.FilterBox:active{ background-color: unset; }
 
 .Feature-image img{
   overflow: hidden;
@@ -666,14 +613,9 @@ span{ display: block; }
 
 /* -------PROJECT EXTERNAL LINKS ---------*/
 
-.Links{
-  margin-top: 12px;
-}
+.Links{ margin-top: 12px; }
 
-.Project-link{
-  display: inline-block;
-  padding: 10px;
-}
+.Project-link{ display: inline-block; padding: 10px; }
 
 .Project-link svg{
   width: 25px;
@@ -686,19 +628,13 @@ span{ display: block; }
   margin: 80px auto;
 }
 
-.Projects-Other{
-  padding: 2rem;
-}
-
 .Projects-Other > ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px;
 }
 
-.Projects-Other > ul > li{
-  list-style: none;
-}
+.Projects-Other > ul > li{ list-style: none; }
 
 .Card{
   background-color: #19262B;
@@ -719,20 +655,18 @@ span{ display: block; }
   font-size: 110%;
   color: #f2ede3;
 }
-.Card-Description p{
-  font-size: 85%;
-}
+.Card-Description p{ font-size: 85%; }
 
 .Card-Header{
   display: flex;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    align-items: center;
-    margin-bottom: 30px;
-    padding: 10px 1px;
-    box-shadow: 0px 10px 10px 0px rgb(10, 10, 10, .5);
-    width: 100%;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-bottom: 25px;
+  padding: 10px 1px;
+  box-shadow: 0px 10px 10px 0px rgb(10, 10, 10, .5);
+  width: 100%;
 }
 
 .Card-Header svg{
@@ -748,27 +682,22 @@ span{ display: block; }
   margin: 10px 0 0 0;
 }
 
-.Card-Body h5{
-  font-weight: 200;
-  margin-bottom: 10px;
-}
+.Card-Body{ position: relative; height: 100%; }
 
-.Card-Footer li{
-  margin-right: 10px;
-}
+.Card-Body h5{ font-weight: 200; margin-bottom: 10px; }
+
+.Card-Footer li{ margin-right: 12px; }
 
 /*-----CONTACT SECTION COMPONENTS-------*/
 
-.Contact-Body{
-  margin: 0 auto;
-  max-width: 600px;
-}
+.Contact-Body{ margin: 0 auto; max-width: 600px; }
 
 .Contact-TextBody{
   max-width: 600px;
   margin: 0 auto;
   padding: 25px 5px;
   font-size: 100%;
+  line-height: 1.3;
   border-radius: 5px;
   align-content: center;
 }
@@ -783,9 +712,7 @@ span{ display: block; }
   font-size: 78%;
 }
 
-.Contact-Card a{
-  text-decoration: none;
-}
+.Contact-Card a{ text-decoration: none; }
 
 .Contact-Card li {
   line-height: 2;
@@ -817,14 +744,7 @@ span{ display: block; }
   line-height: 1;
   font-family: 'Raleway', ;
   font-weight: 500;
-  
   font-size: 65%;
 }
 
-.Footer-Container p{
-  line-height: 1.8;
-}
-
-
-
-
+.Footer-Container p{ line-height: 1.8; }
